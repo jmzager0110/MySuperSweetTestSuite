@@ -1,5 +1,15 @@
 package a11y;
 
+import com.deque.axe.AXE;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.After;
+import org.junit.Asser;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 
@@ -12,7 +22,7 @@ public class sampleTest {
     public void setup() {
         WebDriverManager.chromedriver().setup;
         driver = new ChromeDriver();
-        driver.get("https://whats-the-url-again");
+        driver.get("https://jmzager0110.github.io/jmzager0110-resume/");
     }
 
     @After
