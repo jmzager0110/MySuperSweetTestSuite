@@ -12,8 +12,15 @@ import net.thucydides.core.steps.ScenarioSteps;
 public class MainPageSteps extends ScenarioSteps {
 
     @Step
-    @When("user does something else")
-    public void whenUserDoesSomethingElse() {
-        mainPage.selectExampleElement();
+    @When ("user is doing something")
+    public void whenUserIsDoingSomething() { mainPage.selectExampleElement();
     }
+
+    @Step
+    @Then("user does something else")
+    public void thenUserDoesSomethingElse() {
+        mainPage.selectOtherExampleElement();
+    }
+
+    //TODO: Update these& add some more
 }

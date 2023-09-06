@@ -29,10 +29,10 @@ public class MainPage extends BasePage {
         SeleniumUtils.safeClick(driver, exampleElement, SHORT_WAIT);
     }
 
-    public void selectExampleelementTitle(String otherExampleElement) {
+    public void selectExampleElementTitle(String otherExampleElement) {
         WebElement otherExampleElement = getDriver().findElement(By.xpath("//header//section/ul[@class='menu']/li/a" +
                 "[text()='" + otherExampleElement + "']"));
         SeleniumUtils.safeClick(driver, otherExampleElement, SHORT_WAIT);
     }
-
+    //TODO: Add testing methods that will correspond with steps
 }

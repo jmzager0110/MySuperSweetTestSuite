@@ -16,8 +16,8 @@ public CommonSteps extends ScenarioSteps {
     private MainPage mainPage;
 
     @Step
-    @Given ("user is doing something")
-    public void givenUserIsDoingSomething() {
-        basePage.openApplication();
+    @Given ("user on page")
+    public void givenUserIsOnPage() {
+        mainPage.openApplication();
         }
     }

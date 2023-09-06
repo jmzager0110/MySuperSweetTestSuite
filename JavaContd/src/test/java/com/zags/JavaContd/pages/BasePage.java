@@ -24,5 +24,5 @@ public abstract class BasePage extends PageObject implements Timeouts {
         opanAt(SeleniumUtils.getBaseUrl());
     }
 
-    //TODO: Add testing methods that will correspond with steps
+
 }
